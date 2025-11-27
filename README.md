@@ -55,41 +55,4 @@ Custom dataset training
 
 Achieving high accuracy with less data and time
 
-✔️ Perfect for beginners who want fast, accurate deep learning models.
 
-⚙️ Tech Stack I Work With
-🔥 Frontend
-
-HTML, CSS, JavaScript
-
-React.js (Routing, Components, Hooks)
-
-Bootstrap, Tailwind, MDB UI Kit
-
-🟢 Backend
-
-Node.js
-
-Express.js
-
-MongoDB (MERN Stack)
-
-🤖 Machine Learning
-
-Python
-
-NumPy, Pandas, Matplotlib
-
-Scikit-Learn
-
-TensorFlow / Keras
-
-Transfer Learning Models
-
-📱 Android Development
-
-Android Studio
-
-Java + XML
-
-UI Design
