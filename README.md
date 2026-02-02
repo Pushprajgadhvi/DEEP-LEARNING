@@ -6,6 +6,7 @@ This repository contains **implementation-focused code and explanations strictly
 * **Convolutional Neural Networks (CNN)**
 * **Recurrent Neural Networks (RNN)**
 * **Long Short-Term Memory Networks (LSTM)**
+*  **Gated Recurrent Unit (GRU)**
 
 ---
 
