@@ -1,4 +1,4 @@
-# Deep Learning 
+## Deep Learning 
 
 This repository contains **implementation-focused code and explanations strictly related to core Deep Learning architectures**:
 
@@ -6,7 +6,8 @@ This repository contains **implementation-focused code and explanations strictly
 * **Convolutional Neural Networks (CNN)**
 * **Recurrent Neural Networks (RNN)**
 * **Long Short-Term Memory Networks (LSTM)**
-*  **Gated Recurrent Unit (GRU)**
+* **Gated Recurrent Unit (GRU)**
+* **DEEP RNN (recurrent neural network)**
 
 ---
 
@@ -18,12 +19,14 @@ This repository contains **implementation-focused code and explanations strictly
 4. Convolutional Neural Networks (CNN)
 5. Recurrent Neural Networks (RNN)
 6. Long Short-Term Memory (LSTM)
-7. Common Training Components
-8. Evaluation Metrics
-9. Repository Structure
-10. How to Run the Code
-11. Use Cases
-12. Author
+7. Gated Recurrent unit (GRU)
+8. DEEP RNN (Recurrent Neural Network)
+9. Common Training Components
+10. Evaluation Metrics
+11. Repository Structure
+12. How to Run the Code
+13. Use Cases
+14. Author
 
 ---
 
@@ -143,7 +146,17 @@ This repository is designed for **students and practitioners** who want a **clea
 
 ---
 
-## 7. Common Training Components
+## 7. Gated Recurrent Unit (GRU)
+
+*  A GRU is an advanced RNN architecture that uses gates to control the flow of information and reduce the vanishing gradient problem. In a Deep GRU, instead of a single GRU layer, two or more GRU layers are stacked, making the network deep in space while still recurrent in time.
+
+
+## 8. DEEP RNN (Recurrent Neural Network)
+
+* In a basic RNN, there is only one recurrent layer, which processes sequential data by maintaining a hidden state that captures information from previous time steps. In contrast, a Deep RNN consists of two or more recurrent layers, where the output (hidden state) of one layer at a given time step is used as the input to the next layer at the same time step.
+
+  
+## 9. Common Training Components
 
 These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
@@ -156,7 +169,7 @@ These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
 ---
 
-## 8. Evaluation Metrics
+## 10. Evaluation Metrics
 
 ### Classification
 
@@ -172,7 +185,7 @@ These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
 ---
 
-## 9. Repository Structure
+## 11. Repository Structure
 
 ```
 ANN/
@@ -198,7 +211,7 @@ LSTM/
 
 ---
 
-## 10. How to Run the Code
+## 12. How to Run the Code
 
 1. Clone the repository
 2. Install required dependencies
@@ -207,7 +220,7 @@ LSTM/
 
 ---
 
-## 11. Use Cases
+## 13. Use Cases
 
 * Academic practical files
 * Deep Learning lab experiments
