@@ -8,6 +8,7 @@ This repository contains **implementation-focused code and explanations strictly
 * **Long Short-Term Memory Networks (LSTM)**
 * **Gated Recurrent Unit (GRU)**
 * **DEEP RNN (recurrent neural network)**
+* **Bidirectional RNN**
 
 ---
 
@@ -21,12 +22,13 @@ This repository contains **implementation-focused code and explanations strictly
 6. Long Short-Term Memory (LSTM)
 7. Gated Recurrent unit (GRU)
 8. DEEP RNN (Recurrent Neural Network)
-9. Common Training Components
-10. Evaluation Metrics
-11. Repository Structure
-12. How to Run the Code
-13. Use Cases
-14. Author
+9. Bidirectional RNN
+10. Common Training Components
+11. Evaluation Metrics
+12. Repository Structure
+13. How to Run the Code
+14. Use Cases
+15. Author
 
 ---
 
@@ -155,8 +157,18 @@ This repository is designed for **students and practitioners** who want a **clea
 
 * In a basic RNN, there is only one recurrent layer, which processes sequential data by maintaining a hidden state that captures information from previous time steps. In contrast, a Deep RNN consists of two or more recurrent layers, where the output (hidden state) of one layer at a given time step is used as the input to the next layer at the same time step.
 
+## 9.  Bidirectional RNN 
+
+* A Bidirectional RNN (BiRNN) is an extension of a standard Recurrent Neural Network that processes a sequence in both directions—forward and backward—to capture context from the past and the future simultaneously.
+
+* In a BiRNN, there are two RNNs:
+  **Forward RNN: processes the sequence from left → right
+  **Backward RNN: processes the sequence from right → left
+
+Their hidden states are combined (usually concatenation) to form the final output.
+
   
-## 9. Common Training Components
+## 10. Common Training Components
 
 These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
@@ -169,7 +181,7 @@ These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
 ---
 
-## 10. Evaluation Metrics
+## 11. Evaluation Metrics
 
 ### Classification
 
@@ -185,7 +197,7 @@ These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
 ---
 
-## 11. Repository Structure
+## 12. Repository Structure
 
 ```
 ANN/
@@ -211,7 +223,7 @@ LSTM/
 
 ---
 
-## 12. How to Run the Code
+## 13. How to Run the Code
 
 1. Clone the repository
 2. Install required dependencies
@@ -220,7 +232,7 @@ LSTM/
 
 ---
 
-## 13. Use Cases
+## 14. Use Cases
 
 * Academic practical files
 * Deep Learning lab experiments
