@@ -22,7 +22,7 @@ This repository contains **implementation-focused code and explanations strictly
 6. Long Short-Term Memory (LSTM)
 7. Gated Recurrent unit (GRU)
 8. DEEP RNN (Recurrent Neural Network)
-9. Bidirectional RNN
+9. Bidirectional RNN(Recurrent Neural Network)
 10. Common Training Components
 11. Evaluation Metrics
 12. Repository Structure
