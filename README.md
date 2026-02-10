@@ -9,6 +9,9 @@ This repository contains **implementation-focused code and explanations strictly
 * **Gated Recurrent Unit (GRU)**
 * **DEEP RNN (recurrent neural network)**
 * **Bidirectional RNN**
+* **Attention Mechnism**
+* **Bahdanau attention**
+* **Loung attention**
 
 ---
 
@@ -23,12 +26,15 @@ This repository contains **implementation-focused code and explanations strictly
 7. Gated Recurrent unit (GRU)
 8. DEEP RNN (Recurrent Neural Network)
 9. Bidirectional RNN(Recurrent Neural Network)
-10. Common Training Components
-11. Evaluation Metrics
-12. Repository Structure
-13. How to Run the Code
-14. Use Cases
-15. Author
+10. Attention Mechnism
+11. Bahdanau attention
+12. Loung attention
+13. Common Training Components
+14. Evaluation Metrics
+15. Repository Structure
+16. How to Run the Code
+17. Use Cases
+18. Author
 
 ---
 
@@ -167,8 +173,22 @@ This repository is designed for **students and practitioners** who want a **clea
 
 Their hidden states are combined (usually concatenation) to form the final output.
 
+## 10. Attention Mechnism
+
+* Attention mechanism lets the deoder dynamically focus on the different parts of the input sequence at each ouput step.
+* in attention  their is a technique that allows a neural network to focus on the most relevent parts in the input when making the predictions instead of compresing everything into a single fixed vector
+
+## 11. Bahdanau Attention 
+ * This was the first widely adopted attention mechanism. It is often called Additive Attention because it uses a learned alignment function that "adds" the encoder and decoder states together.
+ * The attention weights are calculated before the decoder generates the current hidden state. The model uses the previous decoder state to find relevant parts of the encoder.
+
+## 12. Loung Attention
+
+* Luong’s approach simplified the process and is often called Multiplicative Attention. It is generally considered more computationally efficient.
+* The attention weights are calculated after the decoder generates the current hidden state.
+
   
-## 10. Common Training Components
+## 13. Common Training Components
 
 These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
@@ -181,7 +201,7 @@ These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
 ---
 
-## 11. Evaluation Metrics
+## 14. Evaluation Metrics
 
 ### Classification
 
@@ -197,7 +217,7 @@ These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
 ---
 
-## 12. Repository Structure
+## 15. Repository Structure
 
 ```
 ANN/
@@ -223,7 +243,7 @@ LSTM/
 
 ---
 
-## 13. How to Run the Code
+## 16. How to Run the Code
 
 1. Clone the repository
 2. Install required dependencies
@@ -232,7 +252,7 @@ LSTM/
 
 ---
 
-## 14. Use Cases
+## 17. Use Cases
 
 * Academic practical files
 * Deep Learning lab experiments
