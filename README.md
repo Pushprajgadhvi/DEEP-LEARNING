@@ -12,6 +12,7 @@ This repository contains **implementation-focused code and explanations strictly
 * **Attention Mechnism**
 * **Bahdanau attention**
 * **Loung attention**
+* **Natural Language Processing( NLP )**
 
 ---
 
@@ -31,10 +32,11 @@ This repository contains **implementation-focused code and explanations strictly
 12. Loung attention
 13. Common Training Components
 14. Evaluation Metrics
-15. Repository Structure
-16. How to Run the Code
-17. Use Cases
-18. Author
+15. Natural Language Processing(NLP)
+16. Repository Structure
+17. How to Run the Code
+18. Use Cases
+19. Author
 
 ---
 
@@ -217,7 +219,17 @@ These components are shared across ANN, CNN, RNN, and LSTM implementations:
 
 ---
 
-## 15. Repository Structure
+## 15. Natural Language Processing(NLP)
+
+* Natural Language Processing (NLP) is the branch of AI that enables machines to read, understand, interpret, and generate human language (text or speech).
+
+* Using neural networks (instead of hand-written rules) to learn language patterns automatically from data.
+
+* So instead of writing grammar rules, the model learns grammar, context, meaning, sentiment, and relationships directly from massive text corpora.
+
+
+
+## 16. Repository Structure
 
 ```
 ANN/
@@ -243,7 +255,7 @@ LSTM/
 
 ---
 
-## 16. How to Run the Code
+## 17. How to Run the Code
 
 1. Clone the repository
 2. Install required dependencies
@@ -252,7 +264,7 @@ LSTM/
 
 ---
 
-## 17. Use Cases
+## 18. Use Cases
 
 * Academic practical files
 * Deep Learning lab experiments
