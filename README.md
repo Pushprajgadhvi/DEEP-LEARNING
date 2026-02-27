@@ -1,4 +1,4 @@
-## Deep Learning 
+# Deep Learning
 
 This repository contains **implementation-focused code and explanations strictly related to core Deep Learning architectures**:
 
@@ -9,227 +9,509 @@ This repository contains **implementation-focused code and explanations strictly
 * **Gated Recurrent Unit (GRU)**
 * **DEEP RNN (recurrent neural network)**
 * **Bidirectional RNN**
-* **Attention Mechnism**
-* **Bahdanau attention**
-* **Loung attention**
-* **Natural Language Processing( NLP )**
+* **Attention Mechanism**
+* **Bahdanau Attention**
+* **Luong Attention**
+* **Transformer Architecture**
+* **Self-Attention**
+* **Multi-Head Attention**
+* **Positional Encoding**
+* **Encoder–Decoder Architecture**
+* **Masked Attention**
+* **BERT (Bidirectional Encoder Representations from Transformers)**
+* **GPT (Generative Pre-trained Transformer)**
+* **Large Language Models (LLMs)**
+* **Natural Language Processing (NLP)**
 
 ---
 
-## Table of Contents
+# Table of Contents
 
-1. Overview
-2. Prerequisites
-3. Artificial Neural Networks (ANN)
-4. Convolutional Neural Networks (CNN)
-5. Recurrent Neural Networks (RNN)
-6. Long Short-Term Memory (LSTM)
-7. Gated Recurrent unit (GRU)
-8. DEEP RNN (Recurrent Neural Network)
-9. Bidirectional RNN(Recurrent Neural Network)
-10. Attention Mechnism
-11. Bahdanau attention
-12. Loung attention
-13. Common Training Components
-14. Evaluation Metrics
-15. Natural Language Processing(NLP)
-16. Repository Structure
-17. How to Run the Code
-18. Use Cases
-19. Author
-
----
-
-## 1. Overview
-
-This repository is designed for **students and practitioners** who want a **clear, practical understanding of ANN, CNN, RNN, and LSTM**, supported by working code implementations. It is suitable for:
-
-* University coursework and lab submissions
-* Concept clarification
-* Interview preparation
-* Entry-level Deep Learning projects
+1. Overview  
+2. Prerequisites  
+3. Artificial Neural Networks (ANN)  
+4. Convolutional Neural Networks (CNN)  
+5. Recurrent Neural Networks (RNN)  
+6. Long Short-Term Memory (LSTM)  
+7. Gated Recurrent Unit (GRU)  
+8. DEEP RNN  
+9. Bidirectional RNN  
+10. Attention Mechanism  
+11. Bahdanau Attention  
+12. Luong Attention  
+13. Transformer Architecture  
+14. Self-Attention Mechanism  
+15. Multi-Head Attention  
+16. Positional Encoding  
+17. Encoder–Decoder Architecture  
+18. Masked Attention  
+19. BERT  
+20. GPT  
+21. Large Language Models (LLMs)  
+22. Common Training Components  
+23. Evaluation Metrics  
+24. Natural Language Processing (NLP)  
+25. Repository Structure  
+26. How to Run the Code  
+27. Use Cases  
+28. Author  
 
 ---
 
-## 2. Prerequisites
+# 1. Overview
 
-### Mathematical Basics
+This repository is designed for **students and practitioners** who want a **clear, practical understanding of Deep Learning architectures**, from basic neural networks to modern Transformer-based models.
+
+It covers:
+
+* Classical Deep Learning (ANN, CNN, RNN, LSTM, GRU)
+* Sequence modeling and Attention
+* Transformer architecture
+* Modern NLP models (BERT, GPT)
+* Foundations of Large Language Models
+
+Suitable for:
+
+* University coursework and lab submissions  
+* Concept clarification  
+* Interview preparation  
+* Deep Learning and NLP projects  
+
+---
+
+# 2. Prerequisites
+
+## Mathematical Basics
 
 * Linear Algebra (vectors, matrices)
-* Basic Probability and Statistics
-* Derivatives and gradients
+* Probability and Statistics
+* Derivatives and Gradients
+* Matrix multiplication intuition
 
-### Programming & Tools
+## Programming & Tools
 
 * Python
 * NumPy
 * Pandas
 * Matplotlib
-* TensorFlow / Keras or PyTorch (as used in the code)
+* TensorFlow / Keras or PyTorch
 
 ---
 
-## 3. Artificial Neural Networks (ANN)
+# 3. Artificial Neural Networks (ANN)
 
-### Concepts Covered
+## Concepts Covered
 
-* Biological inspiration of neural networks
-* Artificial neuron (Perceptron)
-* Fully Connected (Dense) layers
+* Biological inspiration
+* Perceptron
+* Dense layers
 * Forward propagation
 * Backpropagation
 * Loss functions
+* Gradient descent
 
-  * Mean Squared Error (MSE)
-  * Binary & Categorical Cross-Entropy
-* Gradient Descent
+## Use Cases
 
-### Typical Use Cases
-
-* Tabular data classification
-* Regression problems
-* Basic pattern recognition
+* Tabular classification
+* Regression
+* Pattern recognition
 
 ---
 
-## 4. Convolutional Neural Networks (CNN)
+# 4. Convolutional Neural Networks (CNN)
 
-### Concepts Covered
+## Concepts Covered
 
 * Convolution operation
-* Kernels / filters
-* Feature maps
+* Filters and feature maps
 * Padding and stride
-* Pooling layers (Max & Average)
-* Flattening and Dense layers
-* CNN training pipeline
+* Pooling layers
+* Flatten and dense layers
 
-### Common Architectures Implemented
-
-* Basic CNN
-* Deep CNN with multiple convolution blocks
-
-### Typical Use Cases
+## Use Cases
 
 * Image classification
-* Handwritten digit recognition
-* Object and pattern detection
+* Object detection
+* Computer vision tasks
 
 ---
 
-## 5. Recurrent Neural Networks (RNN)
+# 5. Recurrent Neural Networks (RNN)
 
-### Concepts Covered
+## Concepts Covered
 
-* Sequential data modeling
-* Time-step based processing
-* Hidden state representation
-* Many-to-one and many-to-many models
+* Sequential processing
+* Hidden state memory
+* Time-step learning
+* Many-to-many models
 * Vanishing gradient problem
 
-### Typical Use Cases
+## Use Cases
 
 * Time series prediction
 * Text classification
-* Sequence modeling tasks
 
 ---
 
-## 6. Long Short-Term Memory (LSTM)
+# 6. Long Short-Term Memory (LSTM)
 
-### Concepts Covered
+## Concepts Covered
 
-* Motivation for LSTM over RNN
-* Cell state and hidden state
+* Long-term memory handling
+* Cell state
 * Gates:
-
   * Forget gate
   * Input gate
   * Output gate
-* Handling long-term dependencies
 
-### Typical Use Cases
+## Use Cases
 
-* Sentiment analysis
-* Language modeling
-* Stock price and time-series forecasting
-
----
-
-## 7. Gated Recurrent Unit (GRU)
-
-*  A GRU is an advanced RNN architecture that uses gates to control the flow of information and reduce the vanishing gradient problem. In a Deep GRU, instead of a single GRU layer, two or more GRU layers are stacked, making the network deep in space while still recurrent in time.
-
-
-## 8. DEEP RNN (Recurrent Neural Network)
-
-* In a basic RNN, there is only one recurrent layer, which processes sequential data by maintaining a hidden state that captures information from previous time steps. In contrast, a Deep RNN consists of two or more recurrent layers, where the output (hidden state) of one layer at a given time step is used as the input to the next layer at the same time step.
-
-## 9.  Bidirectional RNN 
-
-* A Bidirectional RNN (BiRNN) is an extension of a standard Recurrent Neural Network that processes a sequence in both directions—forward and backward—to capture context from the past and the future simultaneously.
-
-* In a BiRNN, there are two RNNs:
-  **Forward RNN: processes the sequence from left → right
-  **Backward RNN: processes the sequence from right → left
-
-Their hidden states are combined (usually concatenation) to form the final output.
-
-## 10. Attention Mechnism
-
-* Attention mechanism lets the deoder dynamically focus on the different parts of the input sequence at each ouput step.
-* in attention  their is a technique that allows a neural network to focus on the most relevent parts in the input when making the predictions instead of compresing everything into a single fixed vector
-
-## 11. Bahdanau Attention 
- * This was the first widely adopted attention mechanism. It is often called Additive Attention because it uses a learned alignment function that "adds" the encoder and decoder states together.
- * The attention weights are calculated before the decoder generates the current hidden state. The model uses the previous decoder state to find relevant parts of the encoder.
-
-## 12. Loung Attention
-
-* Luong’s approach simplified the process and is often called Multiplicative Attention. It is generally considered more computationally efficient.
-* The attention weights are calculated after the decoder generates the current hidden state.
-
-  
-## 13. Common Training Components
-
-These components are shared across ANN, CNN, RNN, and LSTM implementations:
-
-* Activation functions (ReLU, Sigmoid, Tanh, Softmax)
-* Optimizers (SGD, Adam)
-* Batch size and epochs
-* Learning rate
-* Overfitting and underfitting
-* Validation split
+* NLP
+* Forecasting
+* Speech recognition
 
 ---
 
-## 14. Evaluation Metrics
+# 7. Gated Recurrent Unit (GRU)
 
-### Classification
+GRU simplifies LSTM by using:
 
-* Accuracy
-* Precision
-* Recall
-* F1-score
+* Update gate
+* Reset gate
 
-### Regression
+Advantages:
 
-* Mean Absolute Error (MAE)
-* Mean Squared Error (MSE)
+* Faster training
+* Less parameters
+* Good performance
 
 ---
 
-## 15. Natural Language Processing(NLP)
+# 8. DEEP RNN
 
-* Natural Language Processing (NLP) is the branch of AI that enables machines to read, understand, interpret, and generate human language (text or speech).
+Stacking multiple RNN layers increases learning capacity.
 
-* Using neural networks (instead of hand-written rules) to learn language patterns automatically from data.
+Benefits:
 
-* So instead of writing grammar rules, the model learns grammar, context, meaning, sentiment, and relationships directly from massive text corpora.
+* Better abstraction
+* Improved sequence modeling
 
+---
 
+# 9. Bidirectional RNN
 
-## 16. Repository Structure
+Processes sequence:
+
+Forward →  
+Backward ←  
+
+Captures:
+
+* Past context
+* Future context
+
+---
+
+# 10. Attention Mechanism
+
+Attention allows models to focus on important words instead of compressing all information into one vector.
+
+Benefits:
+
+* Better long sequence handling
+* Improved translation
+* Improved NLP performance
+
+---
+
+# 11. Bahdanau Attention
+
+Also called:
+
+Additive Attention
+
+Key idea:
+
+Alignment score calculated using neural network.
+
+Advantages:
+
+Better performance for long sequences.
+
+---
+
+# 12. Luong Attention
+
+Also called:
+
+Multiplicative Attention
+
+Advantages:
+
+* Faster computation
+* Efficient implementation
+
+---
+
+# 13. Transformer Architecture
+
+Transformer is a deep learning architecture introduced in 2017.
+
+Core idea:
+
+**Uses attention instead of recurrence or convolution**
+
+Main components:
+
+Encoder  
+Decoder  
+Attention layers  
+Feedforward network  
+
+Advantages:
+
+Parallel processing  
+Faster training  
+Better performance  
+
+Used in:
+
+BERT  
+GPT  
+Modern LLMs  
+
+---
+
+# 14. Self-Attention Mechanism
+
+Self-attention allows each word to look at other words in the same sentence.
+
+Key components:
+
+Query (Q)  
+Key (K)  
+Value (V)
+
+Formula:
+
+Attention(Q,K,V) = softmax(QKᵀ / √d) V
+
+Benefits:
+
+Captures relationships between words.
+
+---
+
+# 15. Multi-Head Attention
+
+Instead of one attention, multiple attentions run in parallel.
+
+Benefits:
+
+Model learns:
+
+Syntax relationships  
+Semantic relationships  
+Different context types  
+
+---
+
+# 16. Positional Encoding
+
+Transformers have no sequence order awareness.
+
+Positional encoding adds position information.
+
+Uses:
+
+Sine and cosine functions
+
+Purpose:
+
+Helps model understand word order.
+
+---
+
+# 17. Encoder–Decoder Architecture
+
+Encoder:
+
+Processes input sequence.
+
+Decoder:
+
+Generates output sequence.
+
+Used in:
+
+Translation  
+Chatbots  
+Text generation  
+
+---
+
+# 18. Masked Attention
+
+Prevents model from seeing future tokens.
+
+Used in:
+
+GPT  
+Text generation  
+
+Ensures:
+
+Autoregressive prediction
+
+---
+
+# 19. BERT
+
+Full form:
+
+Bidirectional Encoder Representations from Transformers
+
+Architecture:
+
+Encoder-only Transformer
+
+Key features:
+
+Bidirectional context  
+Masked language modeling  
+
+Uses:
+
+Search engines  
+Text classification  
+Question answering  
+
+---
+
+# 20. GPT
+
+Full form:
+
+Generative Pre-trained Transformer
+
+Architecture:
+
+Decoder-only Transformer
+
+Key features:
+
+Text generation  
+Autoregressive prediction  
+
+Uses:
+
+Chatbots  
+Content generation  
+Coding assistants  
+
+---
+
+# 21. Large Language Models (LLMs)
+
+LLMs are very large Transformer models trained on massive text datasets.
+
+Examples:
+
+GPT  
+BERT  
+LLaMA  
+
+Capabilities:
+
+Text generation  
+Reasoning  
+Translation  
+Summarization  
+
+Training stages:
+
+Pretraining  
+Fine-tuning  
+Inference  
+
+---
+
+# 22. Common Training Components
+
+Shared across models:
+
+Activation functions:
+
+ReLU  
+Sigmoid  
+Tanh  
+Softmax  
+
+Optimizers:
+
+SGD  
+Adam  
+
+Hyperparameters:
+
+Learning rate  
+Batch size  
+Epochs  
+
+Problems:
+
+Overfitting  
+Underfitting  
+
+Solutions:
+
+Regularization  
+Dropout  
+
+---
+
+# 23. Evaluation Metrics
+
+## Classification
+
+Accuracy  
+Precision  
+Recall  
+F1 score  
+
+## Regression
+
+MAE  
+MSE  
+
+## NLP Metrics
+
+BLEU score  
+Perplexity  
+
+---
+
+# 24. Natural Language Processing (NLP)
+
+NLP enables machines to understand human language.
+
+Tasks:
+
+Text classification  
+Translation  
+Chatbots  
+Summarization  
+
+Modern NLP uses:
+
+RNN  
+LSTM  
+Transformers  
+LLMs  
+
+---
+
+# 25. Repository Structure
 
 ```
 ANN/
@@ -251,25 +533,61 @@ LSTM/
 │── lstm_model.py
 │── time_series_data.csv
 │── README.md
+
+GRU/
+│── gru_model.py
+
+TRANSFORMER/
+│── transformer_model.py
+
+BERT/
+│── bert_explanation.md
+
+GPT/
+│── gpt_explanation.md
 ```
 
 ---
 
-## 17. How to Run the Code
+# 26. How to Run the Code
 
-1. Clone the repository
-2. Install required dependencies
-3. Navigate to the specific model folder (ANN/CNN/RNN/LSTM)
-4. Run the Python file
+Step 1:
+
+Clone repository
+
+```
+git clone https://github.com/yourusername/deep-learning
+```
+
+Step 2:
+
+Install dependencies
+
+```
+pip install numpy pandas matplotlib tensorflow torch
+```
+
+Step 3:
+
+Run model
+
+```
+python ann_model.py
+```
 
 ---
 
-## 18. Use Cases
+# 27. Use Cases
 
-* Academic practical files
-* Deep Learning lab experiments
-* Model comparison studies
-* Interview demonstrations
+Academic practical files  
+Deep learning experiments  
+NLP learning  
+Transformer understanding  
+Interview preparation  
 
 ---
 
+# 28. Author
+
+Deep Learning Repository  
+Created for learning and implementation of modern Deep Learning architectures.
