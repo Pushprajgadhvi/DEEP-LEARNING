@@ -1,27 +1,21 @@
 # Deep Learning
 
-This repository contains **implementation-focused code and explanations strictly related to core Deep Learning architectures**:
+This repository contains **implementation-focused notebooks and explanations covering core Deep Learning and Natural Language Processing architectures**, from basic neural networks to modern NLP pipelines.
 
-* **Artificial Neural Networks (ANN)**
-* **Convolutional Neural Networks (CNN)**
-* **Recurrent Neural Networks (RNN)**
-* **Long Short-Term Memory Networks (LSTM)**
-* **Gated Recurrent Unit (GRU)**
-* **DEEP RNN (recurrent neural network)**
-* **Bidirectional RNN**
-* **Attention Mechanism**
-* **Bahdanau Attention**
-* **Luong Attention**
-* **Transformer Architecture**
-* **Self-Attention**
-* **Multi-Head Attention**
-* **Positional Encoding**
-* **Encoder–Decoder Architecture**
-* **Masked Attention**
-* **BERT (Bidirectional Encoder Representations from Transformers)**
-* **GPT (Generative Pre-trained Transformer)**
-* **Large Language Models (LLMs)**
-* **Natural Language Processing (NLP)**
+It includes practical implementations of:
+
+* Artificial Neural Networks (ANN)
+* Convolutional Neural Networks (CNN)
+* Recurrent Neural Networks (RNN)
+* LSTM and GRU
+* Deep and Bidirectional RNN
+* Attention concepts
+* NLP preprocessing techniques
+* Word embeddings (Word2Vec, TF-IDF, Bag-of-Words)
+* Transfer Learning
+* Named Entity Recognition (NER)
+* Sentiment Analysis
+* Data preprocessing and augmentation
 
 ---
 
@@ -29,565 +23,448 @@ This repository contains **implementation-focused code and explanations strictly
 
 1. Overview  
 2. Prerequisites  
-3. Artificial Neural Networks (ANN)  
-4. Convolutional Neural Networks (CNN)  
-5. Recurrent Neural Networks (RNN)  
-6. Long Short-Term Memory (LSTM)  
-7. Gated Recurrent Unit (GRU)  
-8. DEEP RNN  
+3. ANN  
+4. CNN  
+5. RNN  
+6. LSTM  
+7. GRU  
+8. Deep RNN  
 9. Bidirectional RNN  
-10. Attention Mechanism  
-11. Bahdanau Attention  
-12. Luong Attention  
-13. Transformer Architecture  
-14. Self-Attention Mechanism  
-15. Multi-Head Attention  
-16. Positional Encoding  
-17. Encoder–Decoder Architecture  
-18. Masked Attention  
-19. BERT  
-20. GPT  
-21. Large Language Models (LLMs)  
-22. Common Training Components  
-23. Evaluation Metrics  
-24. Natural Language Processing (NLP)  
-25. Repository Structure  
-26. How to Run the Code  
-27. Use Cases  
-28. Author  
+10. NLP Preprocessing  
+11. Feature Extraction (BOW, TF-IDF, n-grams)  
+12. Word Embeddings  
+13. Named Entity Recognition  
+14. Sentiment Analysis  
+15. Transfer Learning  
+16. Training Components  
+17. Evaluation Metrics  
+18. Repository Structure  
+19. How to Run  
+20. Use Cases  
+21. Author  
 
 ---
 
 # 1. Overview
 
-This repository is designed for **students and practitioners** who want a **clear, practical understanding of Deep Learning architectures**, from basic neural networks to modern Transformer-based models.
+This repository provides **hands-on implementation notebooks** for understanding Deep Learning and NLP from fundamentals to advanced topics.
 
-It covers:
+It focuses on:
 
-* Classical Deep Learning (ANN, CNN, RNN, LSTM, GRU)
-* Sequence modeling and Attention
-* Transformer architecture
-* Modern NLP models (BERT, GPT)
-* Foundations of Large Language Models
-
-Suitable for:
-
-* University coursework and lab submissions  
-* Concept clarification  
-* Interview preparation  
-* Deep Learning and NLP projects  
+* Concept clarity
+* Implementation practice
+* Academic and interview preparation
+* Real dataset experimentation
 
 ---
 
 # 2. Prerequisites
 
-## Mathematical Basics
+## Mathematics
 
-* Linear Algebra (vectors, matrices)
-* Probability and Statistics
-* Derivatives and Gradients
-* Matrix multiplication intuition
+* Linear Algebra
+* Probability
+* Gradients and derivatives
 
-## Programming & Tools
+## Programming
 
 * Python
 * NumPy
 * Pandas
 * Matplotlib
-* TensorFlow / Keras or PyTorch
+* TensorFlow / Keras / PyTorch
+* Jupyter Notebook
 
 ---
 
 # 3. Artificial Neural Networks (ANN)
 
-## Concepts Covered
+Notebook:
 
-* Biological inspiration
+```
+Ann.ipynb
+```
+
+Concepts:
+
 * Perceptron
 * Dense layers
-* Forward propagation
 * Backpropagation
-* Loss functions
-* Gradient descent
+* Binary classification
 
-## Use Cases
+Dataset:
 
-* Tabular classification
-* Regression
-* Pattern recognition
+```
+Churn_Modelling.csv
+```
+
+Use case:
+
+Customer churn prediction
 
 ---
 
 # 4. Convolutional Neural Networks (CNN)
 
-## Concepts Covered
+Notebooks:
 
-* Convolution operation
-* Filters and feature maps
-* Padding and stride
-* Pooling layers
-* Flatten and dense layers
+```
+CNNimp.ipynb
+lenet.ipynb
+pooling.ipynb
+visualizing.ipynb
+```
 
-## Use Cases
+Concepts:
 
-* Image classification
-* Object detection
-* Computer vision tasks
+* Convolution layers
+* Pooling
+* Feature maps
+* CNN architecture
 
 ---
 
 # 5. Recurrent Neural Networks (RNN)
 
-## Concepts Covered
+Notebooks:
 
-* Sequential processing
-* Hidden state memory
-* Time-step learning
-* Many-to-many models
-* Vanishing gradient problem
+```
+Rnn_architecture.ipynb
+DeepRnn.ipynb
+```
 
-## Use Cases
+Concepts:
 
-* Time series prediction
-* Text classification
-
----
-
-# 6. Long Short-Term Memory (LSTM)
-
-## Concepts Covered
-
-* Long-term memory handling
-* Cell state
-* Gates:
-  * Forget gate
-  * Input gate
-  * Output gate
-
-## Use Cases
-
-* NLP
-* Forecasting
-* Speech recognition
+* Sequential learning
+* Hidden state
+* Time-series modeling
 
 ---
 
-# 7. Gated Recurrent Unit (GRU)
+# 6. Long Short Term Memory (LSTM)
 
-GRU simplifies LSTM by using:
+Notebook:
+
+```
+LSTM.ipynb
+```
+
+Concepts:
+
+* Forget gate
+* Input gate
+* Output gate
+* Long-term dependency learning
+
+---
+
+# 7. GRU (Gated Recurrent Unit)
+
+Notebook:
+
+```
+gru.ipynb
+```
+
+Concepts:
 
 * Update gate
 * Reset gate
-
-Advantages:
-
-* Faster training
-* Less parameters
-* Good performance
+* Efficient sequence learning
 
 ---
 
-# 8. DEEP RNN
+# 8. Bidirectional RNN
 
-Stacking multiple RNN layers increases learning capacity.
+Notebook:
 
-Benefits:
+```
+bidirectionRNN.ipynb
+```
 
-* Better abstraction
-* Improved sequence modeling
+Concept:
 
----
-
-# 9. Bidirectional RNN
-
-Processes sequence:
-
-Forward →  
-Backward ←  
-
-Captures:
-
-* Past context
-* Future context
+Processes sequence forward and backward.
 
 ---
 
-# 10. Attention Mechanism
+# 9. NLP Preprocessing
 
-Attention allows models to focus on important words instead of compressing all information into one vector.
+Notebooks:
 
-Benefits:
+```
+STOPwords.ipynb
+stemming.ipynb
+padding.ipynb
+integer_encoding_learn.ipynb
+redex.ipynb
+```
 
-* Better long sequence handling
-* Improved translation
-* Improved NLP performance
+Concepts:
 
----
-
-# 11. Bahdanau Attention
-
-Also called:
-
-Additive Attention
-
-Key idea:
-
-Alignment score calculated using neural network.
-
-Advantages:
-
-Better performance for long sequences.
+* Stopword removal
+* Stemming
+* Tokenization
+* Padding sequences
+* Text cleaning
 
 ---
 
-# 12. Luong Attention
+# 10. Feature Extraction
 
-Also called:
+## Bag of Words
 
-Multiplicative Attention
+```
+BOW.ipynb
+```
 
-Advantages:
+## Bag of n-grams
 
-* Faster computation
-* Efficient implementation
+```
+BOn-g.ipynb
+```
 
----
+## TF-IDF
 
-# 13. Transformer Architecture
-
-Transformer is a deep learning architecture introduced in 2017.
-
-Core idea:
-
-**Uses attention instead of recurrence or convolution**
-
-Main components:
-
-Encoder  
-Decoder  
-Attention layers  
-Feedforward network  
-
-Advantages:
-
-Parallel processing  
-Faster training  
-Better performance  
-
-Used in:
-
-BERT  
-GPT  
-Modern LLMs  
-
----
-
-# 14. Self-Attention Mechanism
-
-Self-attention allows each word to look at other words in the same sentence.
-
-Key components:
-
-Query (Q)  
-Key (K)  
-Value (V)
-
-Formula:
-
-Attention(Q,K,V) = softmax(QKᵀ / √d) V
-
-Benefits:
-
-Captures relationships between words.
-
----
-
-# 15. Multi-Head Attention
-
-Instead of one attention, multiple attentions run in parallel.
-
-Benefits:
-
-Model learns:
-
-Syntax relationships  
-Semantic relationships  
-Different context types  
-
----
-
-# 16. Positional Encoding
-
-Transformers have no sequence order awareness.
-
-Positional encoding adds position information.
-
-Uses:
-
-Sine and cosine functions
+```
+TF-IDF.ipynb
+```
 
 Purpose:
 
-Helps model understand word order.
+Convert text into numerical vectors.
 
 ---
 
-# 17. Encoder–Decoder Architecture
+# 11. Word Embeddings
 
-Encoder:
-
-Processes input sequence.
-
-Decoder:
-
-Generates output sequence.
-
-Used in:
-
-Translation  
-Chatbots  
-Text generation  
-
----
-
-# 18. Masked Attention
-
-Prevents model from seeing future tokens.
-
-Used in:
-
-GPT  
-Text generation  
-
-Ensures:
-
-Autoregressive prediction
-
----
-
-# 19. BERT
-
-Full form:
-
-Bidirectional Encoder Representations from Transformers
-
-Architecture:
-
-Encoder-only Transformer
-
-Key features:
-
-Bidirectional context  
-Masked language modeling  
-
-Uses:
-
-Search engines  
-Text classification  
-Question answering  
-
----
-
-# 20. GPT
-
-Full form:
-
-Generative Pre-trained Transformer
-
-Architecture:
-
-Decoder-only Transformer
-
-Key features:
-
-Text generation  
-Autoregressive prediction  
-
-Uses:
-
-Chatbots  
-Content generation  
-Coding assistants  
-
----
-
-# 21. Large Language Models (LLMs)
-
-LLMs are very large Transformer models trained on massive text datasets.
-
-Examples:
-
-GPT  
-BERT  
-LLaMA  
-
-Capabilities:
-
-Text generation  
-Reasoning  
-Translation  
-Summarization  
-
-Training stages:
-
-Pretraining  
-Fine-tuning  
-Inference  
-
----
-
-# 22. Common Training Components
-
-Shared across models:
-
-Activation functions:
-
-ReLU  
-Sigmoid  
-Tanh  
-Softmax  
-
-Optimizers:
-
-SGD  
-Adam  
-
-Hyperparameters:
-
-Learning rate  
-Batch size  
-Epochs  
-
-Problems:
-
-Overfitting  
-Underfitting  
-
-Solutions:
-
-Regularization  
-Dropout  
-
----
-
-# 23. Evaluation Metrics
-
-## Classification
-
-Accuracy  
-Precision  
-Recall  
-F1 score  
-
-## Regression
-
-MAE  
-MSE  
-
-## NLP Metrics
-
-BLEU score  
-Perplexity  
-
----
-
-# 24. Natural Language Processing (NLP)
-
-NLP enables machines to understand human language.
-
-Tasks:
-
-Text classification  
-Translation  
-Chatbots  
-Summarization  
-
-Modern NLP uses:
-
-RNN  
-LSTM  
-Transformers  
-LLMs  
-
----
-
-# 25. Repository Structure
+Notebooks:
 
 ```
-ANN/
-│── ann_model.py
-│── dataset.csv
-│── README.md
+wordv.ipynb
+wordv2.ipynb
+```
 
-CNN/
-│── cnn_model.py
-│── image_dataset/
-│── README.md
+Concepts:
 
-RNN/
-│── rnn_model.py
-│── sequence_data.csv
-│── README.md
+* Word2Vec
+* Semantic similarity
+* Dense vector representation
 
-LSTM/
-│── lstm_model.py
-│── time_series_data.csv
-│── README.md
+---
 
-GRU/
-│── gru_model.py
+# 12. Named Entity Recognition (NER)
 
-TRANSFORMER/
-│── transformer_model.py
+Notebook:
 
-BERT/
-│── bert_explanation.md
+```
+NER.ipynb
+```
 
-GPT/
-│── gpt_explanation.md
+Concept:
+
+Detect entities like:
+
+Person  
+Location  
+Organization  
+
+Using spaCy.
+
+---
+
+# 13. Sentiment Analysis
+
+Notebooks:
+
+```
+sentimental_analysis.ipynb
+simple_learn_sentimental.ipynb
+```
+
+Datasets:
+
+```
+spam.csv
+news_dataset.json
+Fake_Real_Data.csv
+```
+
+Use cases:
+
+Spam detection  
+Fake news detection  
+Sentiment classification  
+
+---
+
+# 14. spaCy NLP
+
+Notebooks:
+
+```
+spacy1.ipynb
+spacy2.ipynb
+```
+
+Concepts:
+
+Tokenization  
+NER  
+POS tagging  
+
+---
+
+# 15. Transfer Learning
+
+Notebooks:
+
+```
+transferlearning.ipynb
+transferlearning.finetuining.ipynb
+transferlearningdataaug.ipynb
+pretrainedmodels.ipynb
+```
+
+Concepts:
+
+* Pretrained CNN models
+* Fine tuning
+* Feature extraction
+
+---
+
+# 16. Functional API Models
+
+Notebooks:
+
+```
+functional_api_demo.ipynb
+functional_multiple_input.ipynb
+```
+
+Concepts:
+
+Multi-input models  
+Complex architectures  
+
+---
+
+# 17. Data Augmentation
+
+Notebook:
+
+```
+data_augmentation.ipynb
+```
+
+Purpose:
+
+Increase dataset size artificially.
+
+---
+
+# 18. Datasets Included
+
+```
+Churn_Modelling.csv
+Ecommerce_data.csv
+Fake_Real_Data.csv
+news_dataset.json
+spam.csv
+```
+
+Used for:
+
+Classification  
+Sentiment analysis  
+Fake news detection  
+
+---
+
+# 19. Repository Structure
+
+```
+DeepLearning/
+
+│
+├── ANN
+│   ├── Ann.ipynb
+│   ├── Churn_Modelling.csv
+│
+├── CNN
+│   ├── CNNimp.ipynb
+│   ├── lenet.ipynb
+│   ├── pooling.ipynb
+│   ├── visualizing.ipynb
+│
+├── RNN
+│   ├── Rnn_architecture.ipynb
+│   ├── DeepRnn.ipynb
+│   ├── bidirectionRNN.ipynb
+│   ├── gru.ipynb
+│   ├── LSTM.ipynb
+│
+├── NLP
+│   ├── BOW.ipynb
+│   ├── BOn-g.ipynb
+│   ├── TF-IDF.ipynb
+│   ├── STOPwords.ipynb
+│   ├── stemming.ipynb
+│   ├── padding.ipynb
+│   ├── integer_encoding_learn.ipynb
+│   ├── redex.ipynb
+│   ├── NER.ipynb
+│   ├── spacy1.ipynb
+│   ├── spacy2.ipynb
+│   ├── sentimental_analysis.ipynb
+│   ├── simple_learn_sentimental.ipynb
+│   ├── wordv.ipynb
+│   ├── wordv2.ipynb
+│
+├── TransferLearning
+│   ├── transferlearning.ipynb
+│   ├── transferlearning.finetuining.ipynb
+│   ├── transferlearningdataaug.ipynb
+│   ├── pretrainedmodels.ipynb
+│
+├── FunctionalAPI
+│   ├── functional_api_demo.ipynb
+│   ├── functional_multiple_input.ipynb
+│
+├── datasets
+│   ├── spam.csv
+│   ├── news_dataset.json
+│   ├── Fake_Real_Data.csv
+│   ├── Ecommerce_data.csv
+│
+└── README.md
 ```
 
 ---
 
-# 26. How to Run the Code
+# 20. How to Run
 
-Step 1:
-
-Clone repository
+Install requirements:
 
 ```
-git clone https://github.com/yourusername/deep-learning
+pip install numpy pandas matplotlib tensorflow scikit-learn spacy
 ```
 
-Step 2:
-
-Install dependencies
+Run notebook:
 
 ```
-pip install numpy pandas matplotlib tensorflow torch
+jupyter notebook
 ```
 
-Step 3:
-
-Run model
-
-```
-python ann_model.py
-```
+Open desired `.ipynb` file.
 
 ---
 
-# 27. Use Cases
+# 21. Use Cases
 
-Academic practical files  
-Deep learning experiments  
+Deep learning practice  
 NLP learning  
-Transformer understanding  
+University labs  
 Interview preparation  
-
----
-
-# 28. Author
-
-Deep Learning Repository  
-Created for learning and implementation of modern Deep Learning architectures.
+Portfolio projects  
