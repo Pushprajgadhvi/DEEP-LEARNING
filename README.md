@@ -114,7 +114,6 @@ lenet.ipynb
 pooling.ipynb
 visualizing.ipynb
 ```
-
 Concepts:
 
 * Convolution layers
@@ -148,7 +147,6 @@ Notebook:
 ```
 LSTM.ipynb
 ```
-
 Concepts:
 
 * Forget gate
@@ -306,7 +304,6 @@ Notebooks:
 spacy1.ipynb
 spacy2.ipynb
 ```
-
 Concepts:
 
 Tokenization  
@@ -325,7 +322,6 @@ transferlearning.finetuining.ipynb
 transferlearningdataaug.ipynb
 pretrainedmodels.ipynb
 ```
-
 Concepts:
 
 * Pretrained CNN models
