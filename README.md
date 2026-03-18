@@ -436,7 +436,6 @@ DeepLearning/
 │
 └── README.md
 ```
-
 ---
 
 # 20. How to Run
@@ -445,6 +444,7 @@ Install requirements:
 
 ```
 pip install numpy pandas matplotlib tensorflow scikit-learn spacy
+
 ```
 
 Run notebook:
@@ -464,3 +464,5 @@ NLP learning
 University labs  
 Interview preparation  
 Portfolio projects  
+
+
