@@ -1,6 +1,8 @@
 # Deep Learning
 
-This repository contains **implementation-focused notebooks and explanations covering core Deep Learning and Natural Language Processing architectures**, from basic neural networks to modern NLP pipelines.
+Deep learning is a technique where computers learn automatically from data using multi-layer neural networks, similar to how the human brain processes information.
+
+This repository contains **implementation-focused notebooks and explanations covering core Deep Learning and Natural Language Processing architectures**, from basic neural networks to modern NLP pipelines. 
 
 It includes practical implementations of:
 
